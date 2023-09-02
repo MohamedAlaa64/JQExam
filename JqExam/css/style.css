@@ -1,0 +1,296 @@
+body{
+    background-color: #0A0B0B;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.navy{
+    position: absolute;
+    left: -18%;
+    /* height: 100vh; */
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    z-index: 99999;
+    overflow: hidden;
+    background-color: #0A0B0B;
+    width: 24%;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    background-color: #0A0B0B;
+    width: 75%;
+    
+   
+}
+.nav2{
+    width: 25%;
+    height: 100%;
+    background-color: #181A1B;
+    color:#E3E1DD ;
+    width: 80px;
+    
+}
+#louding{
+    background-color: #09676e;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity:0;
+   }
+  }
+
+
+
+
+
+
+.ToggleShare{
+    font-size: 16px;
+    
+}
+.ToggleShare i{
+    cursor: pointer;
+}
+
+.links li {
+    color: #E3E1DD;
+    padding-bottom: 15px;
+    font-size:16px;
+    line-height:24px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    top: 200px;
+}
+.links ul{
+    display: none;
+}
+.copyRight{
+    color: #E3E1DD;
+}
+#navopen{
+    font-size: 32px;
+    cursor: pointer;
+}
+#navclose{
+    font-size: 32px;
+    cursor: pointer;
+}
+.copyRight i{
+    cursor: pointer;
+
+}
+
+
+.mealCard{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.mealOverLay{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    transition-duration: 0.7s;
+    padding-left: 5px;
+    
+}
+.mealCard:hover .mealOverLay{
+    top: 0;
+}
+
+.secondpage{
+    color: #E3E1DD;
+    
+}
+
+
+.dtailli{
+    background-color:#05404D ;
+    color: #C8C3BC;
+    border-width: 1px;
+    border-color: aqua;
+}
+.dtailtag{
+    background-color:#430C11 ;
+    color:#DF7A83 ;
+    border-width: 1px;
+    border-color: red;
+}
+.dtailbtn a{
+    text-decoration: none;
+    color: #E3E1DD;
+}
+.inputPlace input{
+    width: 45%;
+    
+}
+.inputPlace input::placeholder{
+    color: #47433F;
+}
+.categoryCard{
+position: relative;
+overflow: hidden;
+border: solid;
+border-radius: 10px;
+border-color: #0a0b0b;
+cursor: pointer;
+}
+.categoryCard:hover .categoryOverLay{
+    top: 0;
+}
+.categoryCard img{
+    border-radius: 10px;
+border-color: #0a0b0b;
+}
+.categoryOverLay{
+position: absolute;
+top: 100%;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.4);
+align-items: center;
+color: antiquewhite;
+transition-duration: 0.7s;
+align-items: center;
+
+}
+.areaCol i{
+    color: #E3E1DD;
+    font-size: 64px;
+}
+.areaCol h3{
+    color: #E3E1DD;
+}
+.areaCol{
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: #E3E1DD;
+}
+.ingredCol{
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #E3E1DD;
+    height: 160px;
+    overflow: hidden;
+}
+.ingredCol i{
+    font-size: 64px;
+}
+
+.contIput::placeholder{
+    color: #47433F;
+}
+.massege{
+    width: 100%;
+    
+}
+.alert{
+    color: #995583;
+    border: solid;
+    border-width: 1px;
+    border-color: crimson;
+    background-color: #430C11;
+}

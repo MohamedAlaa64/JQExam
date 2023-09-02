@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="louding">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+    </div>
+
+
+
+    <section  class="d-flex">
+        <div class="navy" id="navy">
+            <div id="nav1id" class="nav1 container ">
+                <div class="links  mt-5 ">
+                    <ul class="list-unstyled position-absolute">
+                        <li id="searchBtn">Search</li>
+                        <li  id="categBtn">Categories</li>
+                        <li id="AreaBtn">Area</li>
+                        <li id="IngrediantsBtn">Ingrediants</li>
+                        <li id="contactBtn">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="copyRight pb-5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <h6>Copyright Â© 2019 All Rights
+                        Reserved.</h6>
+                </div>
+            </div>
+            <div class="nav2 text-center d-flex flex-column justify-content-between  pt-5 pb-5 ">
+                <div><img src="img/logo.png" class="w-75" alt="logo"></div>
+                <i id="navopen" class="fa-solid fa-bars d-block"></i>
+                <i id="navclose" class="fa-solid fa-xmark d-none"></i>
+                <div class="d-flex flex-column justify-content-between ToggleShare">
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="Home">
+            <div class="row  mt-5" id="gallery">
+                
+                
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="mt-5 secondpage d-none " id="detailsec" >
+        <div class="container" id="detailpage">
+          
+        </div>
+        
+    </section>
+
+
+    <section class="mt-5 container d-none" id="searchPage">
+        <div class="inputPlace  d-flex justify-content-around">
+            <input oninput="searchmeal(this.value)" class="form-control bg-transparent  " type="text" id="searchByName" placeholder="Search By Name">
+            <input oninput="searchmeal(this.value)" class="form-control bg-transparent  " type="text" maxlength="1" id="searchByFirstletter" placeholder="Search By First letter">
+        </div>
+        <div class="searchResults mt-2">
+            <div class="row" id="searchResults">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 container d-none " id="categorisPage" >
+        <div class="row" id="categorisResults">
+           
+        </div>
+    </section>
+
+
+    <section class="mt-5 container d-none" id="AreaPage">
+        <div class="row" id="Areaplace">
+            
+        </div>
+    </section>
+
+    <section class="mt-5 container d-none" id="IngrediantsPage">
+        <div class="row" id="IngrediantsPlace">
+            
+        </div>
+    </section>
+
+    <section class="mt-5 container  text-center d-none" id="contactPage">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input id="nameInput" onkeyup="validate()" type="text" class="form-control bg-transparent contIput" placeholder="Enter Your Name">
+                    <div id="nameAlert" class="alert alert-danger w-100 mt-2  d-none">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="emailInput" onkeyup="emailvalidate()" type="email" class="form-control bg-transparent contIput " placeholder="Enter Your Email">
+                    <div id="emailAlert" class="alert alert-danger w-100 mt-2  d-none">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="phoneInput" onkeyup="phonevalidate()" type="text" class="form-control bg-transparent contIput " placeholder="Enter Your Phone">
+                    <div id="phoneAlert" class="alert alert-danger w-100 mt-2  d-none">
+                        Enter valid Phone Number
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="ageInput" onkeyup="agevalidate()" type="number" class="form-control bg-transparent contIput " placeholder="Enter Your Age">
+                    <div id="ageAlert" class="alert alert-danger w-100 mt-2  d-none">
+                        Enter valid age
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="passwordInput" onkeyup="passvalidate()" type="password" class="form-control bg-transparent contIput " placeholder="Enter Your Password">
+                    <div id="passwordAlert" class="alert alert-danger w-100 mt-2  d-none">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input id="repasswordInput" onkeyup="repassvalidate()" type="password" class="form-control bg-transparent contIput " placeholder="Repassword">
+                    <div id="repasswordAlert" class="alert alert-danger w-100 mt-2  d-none">
+                        Enter valid repassword 
+                    </div>
+                </div>
+            </div>
+        
+        <div><button type="submit" class="btn btn-danger mt-3">submit</button></div>
+        
+    </section>
+   
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/indexo.js"></script>
+</body>
+
+</html>
